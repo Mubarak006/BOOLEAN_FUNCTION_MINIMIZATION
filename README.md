@@ -1,12 +1,13 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+**EXP2:BOOLEAN FUNCTION MINIMIZATION**
+NAME:R.MUBARAK 
+
+REF NO: 24900694
+
 
 **AIM:**
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
 
-F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D 
-
-F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
 **Equipment Required:**
 
@@ -33,18 +34,29 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+module booleanminimization(w,x,y,z,f2);
+
+input w,x,y,z;
+
+output f2;
+
+assign f2=((~y & z)|( w & y )|(x & y));
+
+endmodule
 
 
-**RTL realization**
+**RTL realization OUTPUT**
 
-**Output:**
+![wave form of boolean minimization ](https://github.com/user-attachments/assets/a809022a-69b9-44a3-9d84-0481d60cb4d0)
+
+
 
 **RTL**
 
-**Timing Diagram**
+![boolean minimization screen shot](https://github.com/user-attachments/assets/cce6ce51-8d1a-41c5-9d08-b3e71bd5b014)
+
 
 **Result:**
 
